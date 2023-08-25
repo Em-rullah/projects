@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 11px;
+      color: hsl(0, 0%, 100%);
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+
+  <div class="rating-container">
+    <div class="rating-part">
+
+      <div class="star">
+        <img src="images/icon-star.svg" alt="star">
+      </div>
+      <h3 class="tertiary-heading">
+        How did we do?
+      </h3>
+
+      <p class="rating-text">
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+
+      <div class="ratings-container">
+        <ul class="ratings">
+          <li id="one" class="rating">1</li>
+          <li id="two" class="rating">2</li>
+          <li id="three" class="rating">3</li>
+          <li id="four" class="rating">4</li>
+          <li id="five" class="rating">5</li>
+        </ul>
+      </div>
+
+      <button class="submit-btn">
+        SUBMIT
+      </button>
+
+    </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div class="display thanks-part ">
+
+      <div class="thanks-img">
+        <img src="images/illustration-thank-you.svg" alt="illustration about something">
+      </div>
+
+      <div class="sub-heading">
+        <p class="sub-heading-text"></p>
+      </div>
+
+      <h3 class="tertiary-heading thank-you-heading">Thank you!</h3>
+
+      <p class="rating-text thank-you-text">We appreciate you taking the time to give a rating. If you ever need more
+        support,
+        don’t hesitate to get in touch!</p>
+
+    </div>
+
+    <!-- Thank you state end -->
+
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
